@@ -148,7 +148,7 @@ class JpaServiceTest {
             var speed = service.getAverageSpeed(savedRunner);
 
             assertThat(speed.getAsDouble())
-                    .isCloseTo(0.1, Offset.offset(1e-7));
+                    .isCloseTo(5.0, Offset.offset(1e-7));
         }
 
         @Test
